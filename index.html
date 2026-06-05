@@ -1446,9 +1446,11 @@ function hapusBarang(id) {
 // ============ INIT ============
 renderProduk();
 </script><style>
-/* Solusi final: kasih jarak buat navbar HP */
-.modal-content, #cart-modal .cart-content {
-    padding-bottom: calc(100px + env(safe-area-inset-bottom)) !important;
+/* Kasih ruang scroll di bawah keranjang */
+.modal-content {
+    padding-bottom: 90px !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
 }
 </style>
 </body>
