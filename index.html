@@ -1446,9 +1446,10 @@ function hapusBarang(id) {
 // ============ INIT ============
 renderProduk();
 </script><style>
-/* Biar tombol checkout nggak ketutup navbar HP */
-.modal-content {
-    padding-bottom: 120px !important;
+/* Angkat tombol checkout biar gak ketutup navbar HP */
+.modal-footer, .cart-footer, #cart-modal button {
+    padding-bottom: 100px !important;
+    margin-bottom: 80px !important;
 }
 </style>
 </body>
