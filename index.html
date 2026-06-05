@@ -1446,11 +1446,33 @@ function hapusBarang(id) {
 // ============ INIT ============
 renderProduk();
 </script><style>
-/* Kasih ruang scroll di bawah keranjang */
+/* Bikin keranjang rapi + gambar keliatan */
 .modal-content {
-    padding-bottom: 90px !important;
-    max-height: 90vh !important;
+    max-height: 85vh !important;
     overflow-y: auto !important;
+    padding-bottom: 100px !important;
+}
+
+/* Bikin tiap item barang ada gambar + nama full */
+.cart-item, .item-keranjang {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 0 !important;
+}
+
+.cart-item img, .item-keranjang img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.cart-item .nama-barang {
+    flex: 1 !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
 }
 </style>
 </body>
