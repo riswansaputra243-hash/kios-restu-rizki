@@ -1446,10 +1446,9 @@ function hapusBarang(id) {
 // ============ INIT ============
 renderProduk();
 </script><style>
-/* Angkat tombol checkout biar gak ketutup navbar HP */
-.modal-footer, .cart-footer, #cart-modal button {
-    padding-bottom: 100px !important;
-    margin-bottom: 80px !important;
+/* Solusi final: kasih jarak buat navbar HP */
+.modal-content, #cart-modal .cart-content {
+    padding-bottom: calc(100px + env(safe-area-inset-bottom)) !important;
 }
 </style>
 </body>
